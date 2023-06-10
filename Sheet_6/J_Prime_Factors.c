@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 
 void printPrimeFactors(unsigned long n) {   
     int flag = 0;

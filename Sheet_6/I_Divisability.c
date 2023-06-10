@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 
 unsigned long long sum(unsigned long long n){
     // This function returns sum from 1 to n: 1+2+3+...+n
