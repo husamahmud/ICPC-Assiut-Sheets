@@ -21,13 +21,13 @@ void check_pass(int n, int password[])
 	{
 		if (password[i] == 1999)
 		{
-			printf("Correct\n");	
-		} else {
+			printf("Correct\n");
+		}
+		else
+		{
 			printf("Wrong\n");
 		}
-	
 	}
-
 }
 
 /**
@@ -41,26 +41,26 @@ void check_pass(int n, int password[])
  * Return: Always 0 in success.
  */
 
-int main (void)
+int main(void)
 {
 	int n;
 	int i;
 	int *password;
-	
+
 	printf("Enter the number of passwords: ");
 	scanf("%d", &n);
 
-	password = malloc(sizeof(int)*n);
+	password = malloc(sizeof(int) * n);
 
 	if (!password)
 	{
 		printf("Error: could not allocate memory!\n");
 		return EXIT_FAILURE;
 	}
-	
+
 	printf("enter your password:\n");
 
-	for ( i = 1; i < n; i++)
+	for (i = 1; i < n; i++)
 	{
 		scanf("%d\n", &password[i]);
 	}
@@ -70,4 +70,3 @@ int main (void)
 
 	return (0);
 }
-
