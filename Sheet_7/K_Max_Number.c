@@ -9,7 +9,7 @@ long long max (long long a, long long b){
 
 long long maxArr(int n, long long* arr){
     if (n == 1)
-        return maxVal;
+        return max(maxVal, arr[0]);
 
     maxVal = max(maxVal, arr[0]);
     maxArr(n - 1, ++arr);
