@@ -3,19 +3,13 @@
 
 int main()
 {
-  char s[1000001];
-  int count = 0;
+	char s[1000001];
+	int count = 1, i;
+	gets(s);
 
-  fgets(s, 1000001, stdin);
-  char *token = strtok(s, " !.,?\n");
+	for(i = 1; s[i]; i++)
+		if(!(s[i] >= 'A' && s[i] <= 'z') && s[i+1] >= 'A' && s[i+1] <= 'z')
+			count++;
 
-  while (token != NULL)
-  {
-    count++;
-    token = strtok(NULL, " !.,?\n");
-  }
-
-  printf("%d\n", count);
-
-  return 0;
+	printf("%d\n", count);
 }
